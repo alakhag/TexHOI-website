@@ -3,7 +3,7 @@
     
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>PhySG: Inverse Rendering with Spherical Gaussians for Physics-based Material Editing and Relighting</title>
+    <title>TexHOI: Reconstructing Textures of 3D Unknown Objects in Monocular Hand-Object Interaction Scenes</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,9 +45,9 @@
     <div class="container" id="main">
         <div class="row">
             <h1 class="col-md-12 text-center">
-                PhySG: Inverse Rendering with Spherical Gaussians for <br>Physics-based Material Editing and Relighting<br>
+                TexHOI: Reconstructing Textures of 3D Unknown Objects in Monocular Hand-Object Interaction Scenes<br>
                 <small>
-                    CVPR 2021
+                    ICCVM 2025
                 </small>
             </h1>
         </div>
@@ -55,34 +55,23 @@
             <div class="col-md-12 text-center">
                 <ul class="list-inline">
                     <li>
-                        <a href="https://kai-46.github.io/website/">
-                          Kai Zhang<sup>*</sup>
+                        <a href="https://alakhag.github.io/home/">
+                          Alakh Aggarwal
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.cs.cornell.edu/~fujun/">
-                          Fujun Luan<sup>*</sup>
+                        <a href="https://ningnawang.github.io/">
+                          Ningna Wang
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.cs.cornell.edu/~qqw/">
-                          Qianqian Wang
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.cs.cornell.edu/~kb/">
-                          Kavita Bala
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.cs.cornell.edu/~snavely/">
-                          Noah Snavely
+                        <a href="https://personal.utdallas.edu/~xguo/">
+                          Xiaohu Guo
                         </a>
                     </li>
                 </ul>
-                Cornell University <br>
+                The University of Texas at Dallas<br>
                 <!-- <br> -->
-                (<sup>*</sup>Equal contribution)
             </div>
         </div>
 
@@ -103,14 +92,14 @@
                                 <h4><strong>Technical Video [Coming Soon]</strong></h4>
                             </a>
                         </li> -->
-                        <li>
+<!--                         <li>
                             <a href="./files/supp.pdf">
                             <img src="./files/supp_cover.png" height="120px"><br>
                                 <h4><strong>Supplementary</strong></h4>
                             </a>
-                        </li>
+                        </li> -->
                         <li>
-                            <a href="https://github.com/Kai-46/PhySG">
+                            <a href="https://github.com/alakhag/TexHOI">
                             <img src="./files/github_pad.png" height="120px"><br>
                                 <h4><strong>Code</strong></h4>
                             </a>
@@ -132,10 +121,10 @@
                   <source src="https://www.youtube.com/embed/D_M4wTTLIeM" type="video/mp4">
                 </video> -->
                 
-                <div class="youtube_container">
+<!--                 <div class="youtube_container">
                     <iframe src="https://www.youtube.com/embed/D_M4wTTLIeM" 
                         frameborder="0" allowfullscreen class="youtube_video"></iframe>
-                </div>
+                </div> -->
                 
 <!--                 <div class="html5-video-player">
                     <iframe width="100%" height="100%"
@@ -145,7 +134,7 @@
             </div>
         </div>
 
-        <div class="row">
+<!--         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Example Real Results: View Synthesis, Relighting and Material editing
@@ -154,7 +143,7 @@
                   <source src="files/real-world_results.mp4" type="video/mp4">
                 </video>
             </div>
-        </div>
+        </div> -->
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -163,7 +152,7 @@
                 </h3>
                 <img src="./files/physg_pipeline.png" class="img-responsive" alt="overview"><br>
                 <p class="text-justify">
-We present PhySG, an end-to-end inverse rendering pipeline that includes a fully differentiable renderer and can reconstruct geometry, materials, and illumination from scratch from a set of RGB input images. Our framework represents specular BRDFs and environmental illumination using mixtures of spherical Gaussians, and represents geometry as a signed distance function parameterized as a Multi-Layer Perceptron. The use of spherical Gaussians allows us to efficiently solve for approximate light transport, and our method works on scenes with challenging non-Lambertian reflectance captured under natural, static illumination. We demonstrate, with both synthetic and real data, that our reconstructions not only enable rendering of novel viewpoints, but also physics-based appearance editing of materials and illumination.
+Reconstructing 3D models of dynamic, real-world objects with high-fidelity textures from monocular frame sequences has been a challenging problem in recent years. This difficulty stems from factors such as shadows, indirect illumination, and inaccurate object-pose estimations due to occluding hand-object interactions. To address these challenges, we propose a novel approach that predicts the hand’s impact on environmental visibility and indirect illumination on the object's surface albedo. Our method first learns the geometry and low-fidelity texture of the object, hand, and background through composite rendering of radiance fields. Simultaneously, we optimize the hand and object poses to achieve accurate object-pose estimations. We then refine physics-based rendering parameters—including roughness, specularity, albedo, hand visibility, skin color reflections, and environmental illumination—to produce precise albedo, and accurate hand illumination and shadow regions. Our approach surpasses state-of-the-art methods in texture reconstruction and, to the best of our knowledge, is the first to account for hand-object interactions in object texture reconstruction.
                 </p>
             </div>
         </div>
@@ -206,13 +195,13 @@ year={2021}}
                 <h3>
                     Acknowledgements
                 </h3>
-This work was supported in part by the National Science Foundation (IIS-2008313, CHS-1900783, CHS-1930755), and by Intel.
+<!-- This work was supported in part by the National Science Foundation (IIS-2008313, CHS-1900783, CHS-1930755), and by Intel. -->
             </div>
         </div>
       
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
+                The website template was borrowed from the authors of <a href="https://kai-46.github.io/PhySG-website/">PhySG</a>.
                 <p></p>
             </div>
         </div>
