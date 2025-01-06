@@ -1,2 +1,2 @@
-# PhySG
-PhySG: Inverse Rendering with Spherical Gaussians forPhysics-based Material Editing and Relighting
+# TexHOI
+TexHOI: Reconstructing Textures of 3D Unknown Objects in Monocular Hand-Object Interaction Scenes
